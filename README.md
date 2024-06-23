@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ![Screenshot 2024-06-23 214520](https://github.com/bhargavasai9999/assignmentL2/assets/85823759/a78520c3-579b-4dc3-a048-506f5d11e235)
 
+![Screenshot 2024-06-23 214559](https://github.com/bhargavasai9999/assignmentL2/assets/85823759/f9d6ce83-d07a-4911-8530-a959dd5915d7)
 
-![Uploading Screenshot 2024-06-23 214559.png…]()
 
 ![Screenshot 2024-06-23 214615](https://github.com/bhargavasai9999/assignmentL2/assets/85823759/eb280afb-0acc-4c7c-baf8-9b1fb843c7ba)
