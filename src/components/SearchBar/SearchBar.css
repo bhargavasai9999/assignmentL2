@@ -1,0 +1,22 @@
+.search-bar-container {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Remove text selection highlight */
+input[type="text"]::selection {
+    background: transparent;
+    color: inherit;
+}
+
+.input-group-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: white;
+    border-left: 0;
+    cursor: pointer;
+}
