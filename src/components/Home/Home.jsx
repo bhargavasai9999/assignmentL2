@@ -86,7 +86,7 @@ export const Home = () => {
                     />
                 </div>
             ) : error ? (
-                <p className="text-center mt-4">{error}</p>
+                <h4 className="text-center mt-4">{error}</h4>
             ) : (
                 <>
                     {searchResults.length > 0 && (
