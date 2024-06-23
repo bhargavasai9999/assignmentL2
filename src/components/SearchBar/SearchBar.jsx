@@ -1,37 +1,39 @@
 import './SearchBar.css';
 import { useState } from 'react';
-import { Form, FormControl, InputGroup, Container } from 'react-bootstrap';
+import { Form, FormControl, InputGroup, Container, Row, Col } from 'react-bootstrap';
 import { FaSearch } from 'react-icons/fa';
 
-export const SearchBar = () => {
+export const SearchBar = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState('');
 
     const handleSearchChange = (event) => {
         setSearchTerm(event.target.value);
     };
 
-    const handleSearchSubmit = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        console.log('Searching for:', searchTerm);
+        onSearch(searchTerm.trim());
     };
 
     return (
         <Container className="search-bar-container">
-            <Form onSubmit={handleSearchSubmit} className='d-flex align-end'>
-                <InputGroup>
-                    <FormControl
-                        type="text"
-                        placeholder="Search Images Here"
-                        value={searchTerm}
-                        onChange={handleSearchChange}
-                    />
-                    <InputGroup.Text className='btn btn-primary'>
-                        
-                        <FaSearch />
-                        
-                    </InputGroup.Text>
-                </InputGroup>
-            </Form>
+            <Row className="justify-content-center">
+                <Col lg={12}>
+                    <Form onSubmit={handleSubmit} className='d-flex'>
+                        <InputGroup>
+                            <FormControl
+                                type="text"
+                                placeholder="Search Images Here"
+                                value={searchTerm}
+                                onChange={handleSearchChange}
+                            />
+                            <InputGroup.Text as="button" type="submit" className='btn btn-primary'>
+                                <FaSearch />
+                            </InputGroup.Text>
+                        </InputGroup>
+                    </Form>
+                </Col>
+            </Row>
         </Container>
     );
 };

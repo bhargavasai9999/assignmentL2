@@ -1,22 +1,26 @@
 .search-bar-container {
     margin-top: 20px;
-}
-
-input[type="text"] {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-/* Remove text selection highlight */
-input[type="text"]::selection {
-    background: transparent;
-    color: inherit;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
 }
 
 .input-group-text {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    background-color: white;
-    border-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    border-left: none;
+}
+
+.input-group-text:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.form-control {
+    border-right: none;
 }
